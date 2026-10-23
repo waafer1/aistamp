@@ -34,8 +34,13 @@ No data is collected. The card is generated on each request (cached 30 min).
 
 OpenAI · Claude · Gemini · LangChain / LangGraph · LiteLLM · HuggingFace
 (transformers / datasets / diffusers / hub) · vLLM · Ollama · Together AI · Groq ·
-Mistral · Cohere · DeepSeek · Qwen (DashScope) · GLM (Zhipu) · Kimi (Moonshot) ·
-MCP · Vercel AI SDK · SentenceTransformers
+Mistral · Cohere · MCP · Vercel AI SDK · SentenceTransformers
+
+**Chinese model providers, first-class support:**
+
+DeepSeek · Qwen (DashScope) · GLM (Zhipu) · Kimi (Moonshot) · Doubao (火山方舟) ·
+Qianfan (百度千帆) · Spark (讯飞星火) · MiniMax · Baichuan · ModelScope (魔搭) ·
+Xinference
 
 Missing your favorite? PRs welcome — add one entry to `src/detect.js`.
 
