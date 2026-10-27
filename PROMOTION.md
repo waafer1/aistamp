@@ -134,6 +134,43 @@ github.com/waafer1/aistamp
 
 ---
 
+## 4b. 掘金 —— V2EX 被墙/发不了时的首选替代（国内直连）
+
+> 掘金有两条路：**沸点**（短动态，类似发帖，零门槛）和**专栏文章**（长文，带 SEO 长尾）。
+> 冷启动先发沸点，若反馈好，把下面短版扩写成专栏文章再发一次，一鱼两吃。
+
+**沸点版（直接发）**
+
+```
+做了个开源小工具 AIStamp：README 里贴一行图片链接，自动从依赖清单
+（requirements.txt / package.json / go.mod / Cargo.toml）里识别项目的 AI 技术栈，
+渲染成一张实时 SVG 卡片，GitHub 暗色/亮色主题都适配。
+
+- 零配置：不用注册、不用 token、不采集数据
+- 识别 30+ SDK：OpenAI、Claude、Gemini、LangChain、vLLM、Ollama、MCP，以及
+  国产全家桶——DeepSeek、通义千问、智谱 GLM、Kimi、豆包、百度千帆、讯飞星火、
+  MiniMax、百川、魔搭（这些英文同类工具都不认）
+- MIT 开源，单个 Cloudflare Worker，自托管一条命令
+
+实测 MetaGPT 仓库：识别出 6 个组件，3 个国产——接了国产模型的中文 AI 项目，
+终于有地方展示了。
+
+用法一行：
+![AI Stack](https://aistamp.aistamp.workers.dev/card/OWNER/REPO.svg)
+
+仓库：https://github.com/waafer1/aistamp
+求真实反馈：你会往自己项目的 README 里贴这种卡片吗，还是觉得是视觉噪音？
+（已知限制：monorepo 子目录依赖还识别不到，在路线图上；想加什么 SDK 直接评论）
+```
+
+（配图：browser-use 卡片截图或 MetaGPT 卡片截图，二选一，MetaGPT 更能打）
+
+**专栏文章扩写方向**（如果沸点有互动再做）：起因（手写支持列表永远过时）→
+实现原理（清单抓取 + 模式匹配 + SVG 渲染 + GitHub camo 的坑）→ 国产 SDK 识别表
+怎么维护 → 已知限制和路线图。正文 1500 字以内，掘金读者吃「我是怎么做的」。
+
+---
+
 ## 5. 即刻 / 朋友圈（最口语）
 
 ```
@@ -268,7 +305,7 @@ OpenAI、Claude、Gemini、DeepSeek、通义、GLM、Kimi、豆包等 30+ 个 SD
 
 | 顺序 | 渠道 | 时机 |
 |---|---|---|
-| 1 | V2EX / 即刻 | 立即发，当演练——中文区反馈快、恶评成本低，先拿真实反馈修文案 |
+| 1 | 掘金沸点 / 即刻 | 立即发，当演练——国内直连，反馈快、恶评成本低，先拿真实反馈修文案（V2EX 能上就一起发） |
 | 2 | Reddit r/SideProject | 第 2–3 天，根据中文区反馈微调后发 |
 | 3 | X 单条 | 与 Reddit 同天 |
 | 4 | Facebook 群组 | 与 Reddit 同天或之后——先发 1–2 个群试水，看管理员和评论反应再扩 |
