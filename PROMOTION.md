@@ -151,6 +151,119 @@ github.com/waafer1/aistamp
 
 ---
 
+## 6. Facebook 群组 —— 发之前必看群规
+
+> Facebook 的 AI 群组大多禁止裸推广，管理员删帖不看人。写法必须**以分享 + 提问的
+> 姿态进来**：先给一个真实的小观察，再给工具，最后留一个开放问题。链接别放正文
+> 第一行（降低被算法降权的概率），截图先上。
+
+**适用群组（发之前逐个看规则）**：英文——"AI Automation Society"、"ChatGPT &
+Generative AI"、"OpenAI & LLM Developers"；中文——「AI 创业交流」「独立开发者」类
+群组。有 "Self-Promotion Saturday" 之类专属日的群，只在那天发。
+
+**英文版（主用）**
+
+```
+Quick share + a question 👇
+
+I kept noticing the same thing in every AI project's README: a manually written
+"Works with OpenAI, Claude, Gemini..." line that's always out of date the moment
+a new model drops.
+
+So I built a tiny free tool that auto-detects a repo's AI stack from its
+dependency files and renders a live card for the README. One line of markdown,
+no signup, no token. It even picks up Chinese model SDKs — DeepSeek, Qwen, GLM,
+Doubao, Kimi — which most Western badges ignore.
+
+Screenshot below (from the browser-use repo, 118k stars — detected 6 providers
+automatically).
+
+Those of you maintaining open-source AI projects: would this be useful in your
+README, or does it feel like clutter? Honest feedback welcome 🙏
+
+Repo link in comments.
+```
+
+（链接放首条评论。配图：browser-use 卡片截图。）
+
+**中文版**
+
+```
+分享一个刚开源的小工具 + 求个建议 🙏
+
+不知道大家有没有同感：AI 开源项目的 README 里总有那句手写的
+「支持 OpenAI / Claude / Gemini / DeepSeek...」——每次接新模型都得记得改，忘了就过时。
+
+我做了个免费的：README 里贴一行图片，自动从依赖清单里识别 AI 技术栈，
+渲染成一张实时卡片。不用注册不用配置，国产 SDK 是一等公民
+（DeepSeek、通义、智谱 GLM、Kimi、豆包、千帆、星火都认）。
+
+截图是 browser-use 的仓库，自动识别出 6 家。
+
+问一下群里的开发者朋友：这种卡片你会贴到自己项目里吗，还是觉得是视觉噪音？
+说实话就行，我在收集反馈。
+
+仓库链接放评论里。
+```
+
+---
+
+## 7. 自建群组（封面图 + 简介）
+
+> 目的：有一个自己的地盘承接各渠道引来的开发者——别人群发帖是借地，自建群是资产。
+> 封面图 `out/group-cover.png`（1536×1024，Facebook 会自动裁切，核心内容居中放置）。
+
+**群组名（推荐）**
+
+```
+AIStack Builders —— AI 项目展示与技术栈交流
+```
+
+备选：`AIStack 构建者社区`（纯中文）/ `AIStack Builders (AI Dev Showcase)`（纯英文，面向国际）。
+
+**英文简介（Description）**
+
+```
+A community for developers building with AI — and showing it.
+
+Post your projects, get feedback, and pin an AIStamp card to your README so
+people can see your AI stack at a glance: OpenAI, Claude, Gemini, DeepSeek,
+Qwen, GLM, Kimi, Doubao and 30+ more, auto-detected from your dependencies.
+
+What belongs here:
+✅ Show & tell: your repos, demos, and launches
+✅ Feedback requests: README reviews, stack choices, model comparisons
+✅ Registry requests: want an SDK added to AIStamp? Ask here
+❌ No spam, no "DM me to earn", no crypto shilling
+
+Free & open source: github.com/waafer1/aistamp
+```
+
+**中文简介**
+
+```
+给用 AI 做开发的开发者一个地盘：晒项目、要反馈、聊技术选型。
+
+在你的 README 里贴一张 AIStamp 卡片，别人一眼就能看到你的项目接了哪些模型：
+OpenAI、Claude、Gemini、DeepSeek、通义、GLM、Kimi、豆包等 30+ 个 SDK，
+自动从依赖清单识别，不用注册不用配置。
+
+这里可以发：
+✅ 项目展示：仓库、Demo、上线发布
+✅ 求反馈：README 点评、模型选型对比
+✅ 提需求：想让 AIStamp 识别某个 SDK？群里说，或直接提 PR
+❌ 禁止刷屏广告、"私聊带你赚钱"、币圈内容
+
+工具免费开源：github.com/wafer1/aistamp
+```
+
+**建群三规则（够用就好，规则越多越冷清）**：
+1. 广告仅限「项目展示」类帖，且必须与 AI 开发相关
+2. 不允许评论区和私信拉人/带单，见一次踢一次
+3. SDK 识别需求优先欢迎——这是产品的需求池
+
+---
+
 ## 发布节奏
 
 | 顺序 | 渠道 | 时机 |
@@ -158,7 +271,8 @@ github.com/waafer1/aistamp
 | 1 | V2EX / 即刻 | 立即发，当演练——中文区反馈快、恶评成本低，先拿真实反馈修文案 |
 | 2 | Reddit r/SideProject | 第 2–3 天，根据中文区反馈微调后发 |
 | 3 | X 单条 | 与 Reddit 同天 |
-| 4 | Show HN | **最后**，等 monorepo 识别修完再发——HN 用户第一件事就是拿边缘案例砸你 |
+| 4 | Facebook 群组 | 与 Reddit 同天或之后——先发 1–2 个群试水，看管理员和评论反应再扩 |
+| 5 | Show HN | **最后**，等 monorepo 识别修完再发——HN 用户第一件事就是拿边缘案例砸你 |
 
 **红线自查（发之前过一遍）**：没有编造任何使用数据、没有「对标 shields.io」这类
 拉踩、没有求 star 的字眼（HN/V2EX 都反感）、所有声明可验证。
