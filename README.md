@@ -1,5 +1,11 @@
 # AIStamp
 
+> **⚠️ Archived (2026-10-30).** This repository is kept as a reference implementation,
+> not an actively maintained project. The hosted service is still up and the demo card
+> below keeps rendering (it costs nothing to run), but no new features or issue triage
+> are planned. Fork it if you want to take it further — MIT licensed, single Worker,
+> ~500 lines.
+
 **AI stack cards for your README — zero config.**
 
 Paste one line into your README. Get a live card showing the AI stack your project
